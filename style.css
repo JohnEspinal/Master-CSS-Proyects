@@ -32,12 +32,9 @@ header{
 }
 
 #menu ul li{
-    /*display: inline-block;*/
     display: block;
     float: left;
     border-right: rgb(255, 255, 255) 1px solid;
-    /*padding: 15px;*/
-    
 }
 
 #menu ul li:hover{
@@ -52,13 +49,65 @@ header{
     font-weight: bold;
 }
 
-#Content{
-    width: 71%;
-    float: left;
-}
-
 #lateral{
     float: left;
-    width: 30%;
+    width: 29%;
+    border: solid 1px olivedrab;
+    height: 400px;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+#contenido{
+    width: 70%;
+    float: left;
+    border: rebeccapurple 1px solid;
+
+}
+
+
+#contenido .caja{
+    border: solid 1px brown;
+    width: 40%;
+    height: 250px;
+    display: block;
+    float: left;
+    margin: 20px;
+    margin-left: 45px;
+    background-color: #cccccc;
+    border: rgb(0, 0, 0) solid 2px;
+    box-shadow: 5px 5px 15px gray;
+}
+
+.sombra-interior{
+    box-shadow: 5px 5px 10px gray inset !important;
+}
+
+#contenido .caja h2{
+    text-align: center;
+    line-height: 250px;
+    color: darkred;
+}
+
+#footer{
+    text-align: right;
+    height: 60px;
+    background-color: darkseagreen;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+#footer p{
+    margin-right: 10px;
+}
+
+#contenido h1{
+    width: 100%;
+    border-bottom: solid 2px black;
+    text-align: center;
+    color: rgb(56, 52, 59);
+    line-height: 75px;
+    text-shadow: 0px 0px 2px grey;
     
 }
