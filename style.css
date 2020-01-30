@@ -67,7 +67,6 @@ header{
 
 
 #contenido .caja{
-    border: solid 1px brown;
     width: 40%;
     height: 250px;
     display: block;
@@ -77,16 +76,39 @@ header{
     background-color: #cccccc;
     border: rgb(0, 0, 0) solid 2px;
     box-shadow: 5px 5px 15px gray;
+    border-radius: 100px;
+    transition: box-shadow 1s, background-color 1s;
 }
 
-.sombra-interior{
+.sombra-interior:hover{
     box-shadow: 5px 5px 10px gray inset !important;
+    background-color: brown !important;
+}
+
+
+/*.sombra-interior{
+    animation-name: animationBox;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}*/
+
+@keyframes animationBox{
+    0%{
+        margin-left: 0px;
+    }
+    50%{
+        margin-left: 700px;
+    }
+    100%{
+        margin-left: 0px;
+    }
 }
 
 #contenido .caja h2{
     text-align: center;
     line-height: 250px;
     color: darkred;
+    
 }
 
 #footer{
@@ -109,5 +131,5 @@ header{
     color: rgb(56, 52, 59);
     line-height: 75px;
     text-shadow: 0px 0px 2px grey;
-    
 }
+
